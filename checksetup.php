@@ -12,20 +12,21 @@ require_once( "config.php" );
 function alterar_permissao( $nome_diretorio, $expressao_regular, $permissao_arquivo, $permissao_diretorio ) {
 	$diretorio = opendir( $nome_diretorio );
   while ( false !== ( $arquivo = readdir( $diretorio ) ) ) {
-  	if ( is_dir( $nome_diretorio . "/" . $arquivo ) {
+		$nome_completo = $nome_diretorio . "/" . $arquivo;
+  	if ( is_dir( $nome_completo ) ) {
 			if ( $arquivo != "." && $arquivo != ".."  ) {
-				chmod( $arquivo, $permissao_diretorio );
-				alterar_permissao( $arquivo, $expressao_regular, $permissao_arquivo, $permissao_diretorio );
+				chmod( $nome_completo, $permissao_diretorio );
+				alterar_permissao( $nome_completo, $expressao_regular, $permissao_arquivo, $permissao_diretorio );
 			}
 		} else {
 			if ( ereg( $expressao_regular, $arquivo ) ) {
-				chmod( $arquivo, $permissao_arquivo );
+				chmod( $nome_completo, $permissao_arquivo );
 			}
  		}
 	}
 }
 
-alterar_permissao( ".", "", 0440, 0755 );
-alterar_permissao( REPOSITORIO, "", 0440, 0755 );
+alterar_permissao( ".", "^[a-zA-Z]", 0440, 0755 );
+alterar_permissao( REPOSITORIO, "^tr", 0440, 0755 );
 
 ?>
