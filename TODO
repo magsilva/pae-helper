@@ -4,3 +4,4 @@ Revisar o cálculo automático de notas.
 
 Garantir que o nome do arquivo sendo enviado pelo aluno não é igual ao nome do critério.
 Garantir que arquivos relevantes não possuem permissão de escrita (os .php e os arquivos de correção).
+Deixar configurável a utilização de trabalho substitutivo (atualmente é hardcoded em geral.php).

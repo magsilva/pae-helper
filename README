@@ -1,8 +1,8 @@
 Procecimentos para instalação:
 
-Edite o arquivo "config.php", alterando as definições relevantes (todas menos as duas últimas geralmente).
-Crie o arquivo com os dados sobre os alunos.
-
+1. Edite o arquivo "config.php", alterando as definições relevantes (todas menos as duas últimas geralmente).
+2. Crie o arquivo com os dados sobre os alunos.
+3. Crie o diretório que servirá de repositório para os trabalhos.
 
 
 

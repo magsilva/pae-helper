@@ -82,8 +82,14 @@
 		}
 	
 		echo "\n\t\t<td align=\"center\">";
+// Código a ser utilizado caso não exista trabalho substitutivo.
 //		$media = round( $media  / ( sizeof( $trabalhos ) - 1 ) );
-		$media = round( ( $media - $menor_nota ) / ( sizeof( $trabalhos ) - 1 ) );
+		$media = sizeof( $trabalhos ) - 1;
+		if ( $media > 0 ) {
+			$media = round( ( $media - $menor_nota ) / ( sizeof( $trabalhos ) - 1 ) );
+		} else {
+			$media = 0;
+		}
 		// Médias menores que 5 são escritas em vermelho
 		if ( $media < NOTA_MINIMA ) {
 			echo "<font color=\"#FF0000\">$media</font>";
