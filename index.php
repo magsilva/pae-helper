@@ -20,7 +20,7 @@
 <h2>Controle de trabalhos</h2>
 <dl>
 <?php
-	if ( !isdir( REPOSITORIO ) ) {
+	if ( !is_dir( REPOSITORIO ) ) {
 		echo "O sistema está indisponível temporariamente. Consulte o responsável pelo sistema.";
 	}
 	$diretorio = opendir( REPOSITORIO );
