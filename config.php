@@ -27,6 +27,13 @@ define( "BASE_DADOS", "alunos.txt" );
 */
 define( "NOTA_MINIMA", 50 );
 
+
+/**
+* Habilita ou não a utilização de conexões seguras quando comunicando
+* dados sensíveis do usuário.
+*/
+define( "USAR_CONEXAO_SEGURA", true );
+
 /**
 * Critérios para "avaliação" dos trabalhos. Se criar novos critérios,
 * acrescente aqui o respectivo nome de arquivo que o identificará.
