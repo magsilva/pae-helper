@@ -144,7 +144,7 @@ class Aluno {
 		* Prepara a criação do novo arquivo.
 		*/
 		$ultimo_arquivo++;
-		$arquivo_destino = $diretorio . "/" . $ultimo_arquivo . EXTENSAO_PADRAO;
+		$arquivo_destino = $diretorio . "/" . $ultimo_arquivo;
 
 		/*
 		* Finalmente armazena o arquivo enviado no diretório definitivo.
@@ -166,7 +166,7 @@ class Aluno {
 			return -1;
 		}
 
-		$arquivo = $trabalho->diretorio_base . "/" . $this->numero_usp . "/" . $ultimo_arquivo . EXTENSAO_PADRAO;
+		$arquivo = $trabalho->diretorio_base . "/" . $this->numero_usp . "/" . $ultimo_arquivo;
 		return $arquivo;
 	}
 
