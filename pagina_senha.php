@@ -27,21 +27,21 @@
 
 <?php
 import_request_variables( "P" );
-if ( $numero_usp ) {
+if ( $_REQUEST[ "$numero_usp" ] ) {
 	$mutex = sem_get( MUTEX_ID, MUTEX_VALUE, MUTEX_PERM );
 	sem_acquire( $mutex );
 
 	$classe =& new Classe( BASE_DADOS );
-	if ( $senha_antiga || $senha_nova || $senha_nova_conferida || $email ) {
-		if ( $classe->possui_aluno( $numero_usp ) ) {
-			$aluno =& $classe->pegar_aluno( $numero_usp, $senha_antiga );
-	        	if ( ! is_null( $aluno ) ) {
-				if ( $senha_nova == $senha_nova_conferida ) {
-					$aluno->alterar_senha( $senha_nova );
+	if ( $_REQUEST[ "senha_antiga" ] || $_REQUEST[ "senha_nova" ] || $_REQUEST[ "senha_nova_conferida" ] || $_REQUEST[ "email " ] ) {
+		if ( $classe->possui_aluno( $_REQUEST[ "numero_usp" ] ) ) {
+			$aluno =& $classe->pegar_aluno( $_REQUEST[ "numero_usp" ], $_REQUEST[ "senha_antiga" ] );
+			if ( ! is_null( $aluno ) ) {
+				if ( $_REQUEST[ "senha_nova" ] == $_REQUEST[ "senha_nova_conferida" ] ) {
+					$aluno->alterar_senha( $_REQUEST[ "senha_nova" ] );
 					echo "Senha alterada.\n";
 					if ( $email ) {
-						$aluno->alterar_email( $email );
-						echo "Email alterado para $email.\n";
+						$aluno->alterar_email( $_REQUEST[ "email" ] );
+						echo "Email alterado para $alunos->email.\n";
 					} else {
 						echo "Email inalterado.";
 					}
@@ -56,7 +56,7 @@ if ( $numero_usp ) {
 			echo "Número USP incorreto ou aluno não matriculado na disciplina. Por favor, tente novamente.\n";
 		}
 	} else {
-		$classe->enviar_nova_senha( $numero_usp );
+		$classe->enviar_nova_senha( $_REQUEST[ "numero_usp" ] );
 		$classe->salvar();
 		echo "Uma nova senha foi gerada e enviada para o seu email.\n";
 	}
