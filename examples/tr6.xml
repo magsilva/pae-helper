@@ -1,0 +1,14 @@
+<trabalho id="tr6" data="2003-05-06 23:59">
+	<nome>Monografia sobre Python</nome>
+	<descricao>Monografia sobre Python contendo, resumidamente, os conceitos da linguagem.</descricao>
+	<enunciado>A especificação da monografia está contida no documento<a href="http://coweb.icmc.usp.br/coweb/upload/71/lista6.pdf">lista6.pdf</a></enunciado>
+	<exercicio id="1" valor="100">
+		<criterio id="1" peso="2">Introdução.</criterio>
+		<criterio id="2" peso="2">Conceitos.</criterio>
+		<criterio id="3" peso="2">Vantagens e desvantagens frente a outras linguagens.</criterio>
+		<criterio id="4" peso="2">Tópicos diferenciais.</criterio>
+		<criterio id="5" peso="2">Considerações finais.</criterio>
+		<criterio id="6" peso="2">Bibliografia (inclusive Norma ABNT).</criterio>
+		<criterio id="7" peso="1">Formato.</criterio>
+	</exercicio>
+</trabalho>

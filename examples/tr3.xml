@@ -1,0 +1,38 @@
+<trabalho id="tr3" data="2003-04-08 23:59">
+	<nome>Lista de exercícios 3</nome>
+	<descricao>Definição de classes, revisão de conceitos.</descricao>
+	<enunciado>Exercícios sobre definição de classes e construção de objetos <a href="http://coweb.icmc.usp.br/coweb/upload/71/lista3.pdf">lista3.pdf</a>.</enunciado>
+	<exercicio id="1" valor="25">
+		<criterio id="1" peso="1" descricao="Definir classe." />
+		<criterio id="2" peso="1" descricao="Definir objeto." />
+		<criterio id="3" peso="1" descricao="Definir método." />
+		<criterio id="4" peso="1" descricao="Definir construtor." />
+		<criterio id="5" peso="1" descricao="Mostrar regras de sintaxe para defnir construtores em Python." />
+		<criterio id="6" peso="1" descricao="Explicar o mecanismo de destrutor do Python." />
+		<criterio id="7" peso="1" descricao="Falar sobre as formas de acesso aos atributos de um objeto." />
+		<criterio id="8" peso="1" descricao="Citar os cinco principais conceitos do paradigma de orientação a objetos." />
+		<criterio id="9" peso="1" descricao="Falar sobre as vantagens da utilização de linguagens orientadas a objeto em relação as linguanges procedurais." />
+	</exercicio>
+	<exercicio id="2" valor="25">
+		<criterio id="1" peso="1" descricao="Importar os módulos necessários." />
+		<criterio id="2" peso="1" descricao="Definir a classe Palavra." />
+		<criterio id="3" peso="1" descricao="Definir o método conta_caracteres para contar o número de caracteres de uma palavra." />
+		<criterio id="4" peso="1" descricao="Definir o método conta_o_caracter para contar o número de determinado caracter de uma palavra." />
+	</exercicio>
+	<exercicio id="3" valor="25">
+		<criterio id="1" peso="1" descricao="Importar os módulos necessários." />
+		<criterio id="2" peso="1" descricao="Definir uma classe." />
+		<criterio id="3" peso="1" descricao="Ler o texto a partir do teclado." />
+		<criterio id="4" peso="1" descricao="Imprimir o número de palavras com uma, duas, três, ..., n letras que aparecem no texto." />
+		<criterio id="5" peso="1" descricao="Utilizar a classe Palavra definida no exercício anterior." />
+	</exercicio>
+	<exercicio id="4" valor="25">
+		<criterio id="1" peso="1" descricao="Importar os módulos necessários." />
+		<criterio id="2" peso="1" descricao="Definir tuplas com artigos, substantivos, verbos e preposições.." />
+		<criterio id="3" peso="1" descricao="Gerar orações aleatoriamente, utilizando uma palavra de cada tupla." />
+		<criterio id="4" peso="1" descricao="As orações geradas devem estar no formato [verbo] [preposição] [artigo] [substantivo]." />
+		<criterio id="5" peso="1" descricao="As orações devem começar com letra maiúscula." />
+		<criterio id="6" peso="1" descricao="As orações devem terminar com ponto final." />
+		<criterio id="7" peso="1" descricao="Todas as frases geradas devem ser armazenadas." />
+	</exercicio>
+</trabalho>

@@ -1,0 +1,34 @@
+<trabalho id="tr2" data="2003-03-28 23:59">
+	<nome>Lista de exercícios 2 (parte 2)</nome>
+	<descricao>Definição de classes.</descricao>
+	<enunciado>A lista de exercício a ser entregue consiste da segunda parte do documento <a href="http://coweb.icmc.usp.br/coweb/upload/71/lista2.pdf">lista2.pdf</a>.</enunciado>
+	<exercicio id="1" valor="50">
+		<criterio id="1" peso="1" descricao="Importar os pacotes necessários." />
+		<criterio id="2" peso="1" descricao="Armazenar somente números inteiros." />
+		<criterio id="3" peso="1" descricao="Armazenar quantidade arbitrária de objetos." />
+		<criterio id="4" peso="1" descricao="Não permitir armazenamento de mais de uma referência a um mesmo objeto." />
+		<criterio id="5" peso="1" descricao="Poder ser inicializado com um número arbitrário de objetos do tipo inteiro." />
+		<criterio id="6" peso="1" descricao="Poder ser inicializado com um número arbitrário de objetos do tipo ConjuntoInteiro." />
+		<criterio id="7" peso="1" descricao="Poder ser inicializado com um número arbitrário de objetos do tipo inteiro e ConjuntoInteiro." />
+		<criterio id="8" peso="1" descricao="Poder ser inicializado vazio." />
+		<criterio id="9" peso="1" descricao="Permitir adição de inteiros." />
+		<criterio id="10" peso="1" descricao="Permitir remoção de inteiros." />
+		<criterio id="11" peso="1" descricao="Permitir a operação de união entre conjuntos." />
+		<criterio id="12" peso="1" descricao="Permitir a operação de intersecção entre conjuntos." />
+		<criterio id="13" peso="1" descricao="Permitir a operação de subtração entre conjuntos." />
+		<criterio id="14" peso="1" descricao="Possa ser impresso os elementos do conjunto." />
+	</exercicio>
+	<exercicio id="2" valor="50">
+		<criterio id="15" peso="1" descricao="Importar os pacotes necessários." />
+		<criterio id="16" peso="1" descricao="Ler os dados de um arquivo texto linha por linha." />
+		<criterio id="17" peso="1" descricao="Identificar as palavras de cada frase (linha) lida." />
+		<criterio id="18" peso="1" descricao="Identificar as palavras que são tags." />
+		<criterio id="19" peso="1" descricao="Apresentar o total de frases." />
+		<criterio id="20" peso="1" descricao="Apresentar o total de palavras." />
+		<criterio id="21" peso="1" descricao="Apresentar o total de tags encontradas." />
+		<criterio id="22" peso="1" descricao="Apresentar o total de tags demitadas incorretamente." />
+		<criterio id="23" peso="0" descricao="Mostrar as tags delimitadas incorretamente." />
+		<criterio id="24" peso="1" descricao="Gerar um arquivo contendo o resultado do processamento." />
+		<criterio id="25" peso="1" descricao="Definir as classes frases e palavras, possivelmente também a classe tags." />
+	</exercicio>
+</trabalho>

@@ -1,0 +1,22 @@
+<trabalho id="tr9" data="2003-07-1 23:59">
+	<nome>Lista de exercícios 8 - Sub</nome>
+	<descricao>Objetos e herança - Java</descricao>
+	<enunciado></enunciado>
+	<exercicio id="0" valor="10">
+		<criterio id="1" peso="1" descricao="Conter o arquivo LEIAME." />
+		<criterio id="2" peso="1" descricao="Poder ser compilado sem erros." />
+		<criterio id="3" peso="1" descricao="Executar sem erros usando as instruções do arquivo LEIAME." />
+	</exercicio>
+	<exercicio id="1" valor="90">
+		<criterio id="1" peso="1" descricao="Ler os dados a partir de um arquivo." />
+		<criterio id="2" peso="2" descricao="Identificar corretamente cada dado do arquivo." />
+		<criterio id="3" peso="1" descricao="Ser feito em Swing." />
+		<criterio id="4" peso="2" descricao="Permitir a inserção, por meio da interface, das disciplinas cursadas e a respectiva nota atribuída." />
+		<criterio id="5" peso="1" descricao="Apresentar o número total de créditos." />
+		<criterio id="6" peso="2" descricao="Calcular a quantidade de horas/aula cursadas com base nos créditos cumpridos." />
+		<criterio id="7" peso="1" descricao="Informar a quantidade de horas aula que faltam para cumprir a carga do curso." />
+		<criterio id="8" peso="1" descricao="Sugerir, com base na escolha do tipo de crédito preferido pelo aluno, os créditos faltantes." />
+		<criterio id="9" peso="1" descricao="Selecionado um tipo de disciplina, calcular a média ponderada das notas obtidas nas disciplinas (considerando apenas o número de créditos de cada disciplina." />
+		<criterio id="10" peso="2" descricao="Organizar o programa em classe." />
+	</exercicio>
+</trabalho>

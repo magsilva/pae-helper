@@ -1,0 +1,33 @@
+<trabalho id="tr7" data="2003-05-26 23:59">
+	<nome>Lista de exercícios 6</nome>
+	<descricao>Objetos e herança - Java</descricao>
+	<enunciado></enunciado>
+	<exercicio id="0" valor="25">
+		<criterio id="1" peso="1" descricao="Conter o arquivo LEIAME." />
+		<criterio id="2" peso="2" descricao="Poder ser compilado sem erros." />
+		<criterio id="3" peso="4" descricao="Executar sem erros usando as instruções do arquivo LEIAME." />
+	</exercicio>
+	<exercicio id="1" valor="30">
+		<criterio id="1" peso="1" descricao="Identificar as palavras de cada frase (linha) lida." />
+		<criterio id="2" peso="1" descricao="Identificar as palavras que são tags." />
+		<criterio id="3" peso="2" descricao="Identificar as tags válidas e inválidas." />
+		<criterio id="4" peso="1" descricao="Imprimir o resultado do processamento (total de frases, total de palavras, total de tags, total de tags inválidas)." />
+		<criterio id="5" peso="2" descricao="Definir as classes frases e palavras, possivelmente também a classe tags." />
+	</exercicio>
+	<exercicio id="2" valor="30">
+		<criterio id="1" peso="1" descricao="Não utilizar uma solução pronto do Java." />
+		<criterio id="2" peso="1" descricao="Armazenar somente números inteiros." />
+		<criterio id="3" peso="2" descricao="Armazenar quantidade arbitrária de objetos." />
+		<criterio id="4" peso="2" descricao="Não permitir armazenamento de mais de uma referência a um mesmo objeto." />
+		<criterio id="5" peso="1" descricao="Permitir adição de inteiros." />
+		<criterio id="6" peso="1" descricao="Permitir remoção de inteiros." />
+		<criterio id="7" peso="1" descricao="Permitir a operação de união entre conjuntos." />
+		<criterio id="8" peso="1" descricao="Permitir a operação de intersecção entre conjuntos." />
+		<criterio id="9" peso="1" descricao="Permitir a operação de subtração entre conjuntos." />
+		<criterio id="10" peso="1" descricao="Imprimir os números do conjunto." />
+	</exercicio>
+	<exercicio id="3" valor="15">
+		<criterio id="1" peso="1" descricao="Mostrar uma solução alternativa para o exercício anterior." />
+		<criterio id="2" peso="1" descricao="Mostrar as vantagens e desvantagens de cada solução." />
+	</exercicio>
+</trabalho>

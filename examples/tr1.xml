@@ -1,0 +1,29 @@
+<trabalho id="tr1" data="2003-03-18 23:59">
+	<nome>Lista de exercícios 2 (parte 1)</nome>
+	<descricao>Definição de classes.</descricao>
+	<enunciado>A lista de exercício a ser entregue consiste da primeira parte do documento <a href="http://coweb.icmc.usp.br/coweb/upload/71/lista2.pdf">lista2.pdf</a>.</enunciado>
+	<exercicio id="1" valor="80">
+		<criterio id="1" peso="1" descricao="Exercício 1.1" />
+		<criterio id="2" peso="1" descricao="Exercício 1.2" />
+		<criterio id="3" peso="1" descricao="Exercício 1.3" />
+		<criterio id="4" peso="1" descricao="Exercício 1.4" />
+		<criterio id="5" peso="1" descricao="Exercício 1.5" />
+		<criterio id="6" peso="1" descricao="Exercício 1.6" />
+		<criterio id="7" peso="1" descricao="Exercício 1.7" />
+		<criterio id="8" peso="1" descricao="Exercício 1.8" />
+		<criterio id="9" peso="1" descricao="Exercício 1.9" />
+		<criterio id="10" peso="1" descricao="Exercício 1.10" />
+		<criterio id="11" peso="1" descricao="Exercício 1.11" />
+		<criterio id="12" peso="1" descricao="Exercício 1.12" />
+		<criterio id="13" peso="1" descricao="Exercício 1.13" />
+		<criterio id="14" peso="1" descricao="Exercício 1.14" />
+		<criterio id="15" peso="1" descricao="Exercício 1.15" />
+		<criterio id="16" peso="1" descricao="Exercício 1.16" />
+	</exercicio>
+	<exercicio id="2" valor="20">
+		<criterio id="1" peso="1" descricao="Exercício 2.1" />
+		<criterio id="2" peso="1" descricao="Exercício 2.2" />
+		<criterio id="3" peso="1" descricao="Exercício 2.3" />
+		<criterio id="4" peso="1" descricao="Exercício 2.4" />
+	</exercicio>
+</trabalho>

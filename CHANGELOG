@@ -1,0 +1,26 @@
+01/6/2003
+- Atualizados os trabalhos (basicamente unificando o PAE-old com o PAE).
+- Correção dos algoritmos para correção de trabalho (tr0, tr1, tr2, tr3 e tr6 estão ok).
+- Algumas pequenas modificações em outras classes (basicamente a adição de algusn métodos em algumas classes).
+- Alterado o entrega.php para usar $_REQUEST, dentre outras modificações necessárias para que ele voltasse a funcionar.
+
+31/5/2003
+- Alterado os nomes de alguns arquivos.
+- Flexibilizado no último a criação de trabalhos. Sem duplicação de código em ponto algum a partir de agora, criação de exercícios novos está facílima.
+- Alterados os trabalhos para o novo formato de data.
+- Levemente simplificado o "DTD" dos trabalhos (sem o atributo "root" a partir de agora, sua função passou a ser cumprida pelo "id").
+- Implementação do algoritmo de cálculo de notas. Falta apenas arrumar o parsing do arquivo com correções em aluno.php.
+
+
+20/5/2003
+- Melhorada a troca por servidor seguro em pagina_senha.
+- Adicionado controle de concorrência em pagina_senha.
+
+v2.1
+- Adicionada suporte (bem precário, é verdade) a grupos.
+
+v2.0
+- Alterado para um formato mais OO.
+
+v1.0
+- Criada originalmente por André.

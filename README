@@ -1,0 +1,24 @@
+Como instalar:
+--------------
+1. Criar um arquivo "alunos.txt" com o nome, o número usp, a senha e o email de cada aluno.
+2. Alterar os dados necessários em "config.php" (nome do estagiário e email).
+
+
+
+Como criar um exercício:
+------------------------
+
+1. Criar um diretório em um servidor http e copiar todo o conteúdo deste diretório.
+2. Para cada trabalho criar uma pasta separada. Exemplo: tr1, tr2, etc.
+3. Copiar, para o diretório do trabalho, os arquivos:
+	- pagina*
+	- enunciado.html
+	- config_exercise.php
+4. Criar uma ligação simbólica como o nome "index.php" para o arquivo "pagina_principa.php".
+5. Editar o arquivo "enunciado.html" descrevendo o exercício a ser resolvido.
+6. Editar o arquivo "config_exercise.php" e definindo a data limite, a quantidade de
+exercícios, quanto deve ser a nota parcial de uma questão ( nota exercício / constante ).
+7. Definir as permissões do diretório como sendo de leitura e escrita, e para
+o script somente leitura.
+8. Definir o proprietário do diretório do exercício criado e de todos os arquivos nele contidos
+para www.root (ou algo apropriado).

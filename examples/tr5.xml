@@ -1,0 +1,21 @@
+<trabalho id="tr5" data="2003-04-26 23:59">
+	<nome>Lista de exercícios 5</nome>
+	<descricao>Herança e exceções</descricao>
+	<enunciado>Altere as classes Ponto, Circle e Cylinder de maneira a incluir todas as operações matemáticas (+, -, * e /), fazendo o devido tratamento de erro por meio de exceções.</enunciado>
+	<exercicio id="1" valor="100">
+		<criterio id="1" peso="1" descricao="Definir a operação + (__add__) na classe Ponto." />
+		<criterio id="2" peso="1" descricao="Definir a operação - (__sub__) na classe Ponto." />
+		<criterio id="3" peso="1" descricao="Definir a operação / (__div__ e __rdiv__) na classe Ponto." />
+		<criterio id="4" peso="1" descricao="Definir a operação * (__mul__ e __rmul__) na classe Ponto." />
+		<criterio id="5" peso="1" descricao="Definir a operação + (__add__) na classe Circle." />
+		<criterio id="6" peso="1" descricao="Definir a operação - (__sub__) na classe Circle." />
+		<criterio id="7" peso="1" descricao="Definir a operação / (__div__ e __rdiv__) na classe Circle." />
+		<criterio id="8" peso="1" descricao="Definir a operação * (__mul__ e __rmul__) na classe Circle." />
+		<criterio id="9" peso="1" descricao="Definir a operação + (__add__) na classe Cylinder." />
+		<criterio id="10" peso="1" descricao="Definir a operação - (__sub__) na classe Cylinder." />
+		<criterio id="11" peso="1" descricao="Definir a operação / (__div__ e __rdiv__) na classe Cylinder." />
+		<criterio id="12" peso="1" descricao="Definir a operação * (__mul__ e __rmul__) na classe Cylinder." />
+		<criterio id="13" peso="4" descricao="Tratar erros, utilizando exceções." />
+		<criterio id="14" peso="2" descricao="As classes (o programa) funciona corretamente." />
+	</exercicio>
+</trabalho>

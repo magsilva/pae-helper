@@ -1,0 +1,25 @@
+<trabalho id="tr8" data="2003-06-10 23:59">
+	<nome>Lista de exercícios 7</nome>
+	<descricao>Objetos e herança - Java</descricao>
+	<enunciado></enunciado>
+	<exercicio id="0" valor="30">
+		<criterio id="1" peso="1" descricao="Conter o arquivo LEIAME." />
+		<criterio id="2" peso="2" descricao="Poder ser compilado sem erros." />
+		<criterio id="3" peso="4" descricao="Executar sem erros usando as instruções do arquivo LEIAME." />
+	</exercicio>
+	<exercicio id="1" valor="40">
+		<criterio id="1" peso="1" descricao="Ler o texto de um arquivo." />
+		<criterio id="2" peso="1" descricao="Identificar corretamente os termos da frase." />
+		<criterio id="3" peso="1" descricao="Certificar-se que a estrutura da frase é [artigo] [substantivo] [verbo] [artigo] [substantivo]" />
+		<criterio id="4" peso="2" descricao="Usar polimorfismo." />
+		<criterio id="5" peso="2" descricao="Implementar as classes do modelo." />
+	</exercicio>
+	<exercicio id="2" valor="30">
+		<criterio id="1" peso="1" descricao="Usar o SWING." />
+		<criterio id="2" peso="1" descricao="Permitir a escolha de arquivo." />
+		<criterio id="3" peso="2" descricao="Permitir a escolha do tipo de alteração (gênero ou número)." />
+		<criterio id="4" peso="4" descricao="Realizar a alteração a cada alteração no tipo de alteração." />
+		<criterio id="5" peso="1" descricao="Mostrar as frases originais." />
+		<criterio id="6" peso="1" descricao="Mostrar as frases alteradas." />
+	</exercicio>
+</trabalho>

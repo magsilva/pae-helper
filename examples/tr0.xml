@@ -1,0 +1,8 @@
+<trabalho id="tr0" data="2003-03-11 23:59">
+	<nome>Lista de exercícios 1</nome>
+	<descricao>Introdução a Python: sintaxe, tipos de dados e operadores.</descricao>
+	<enunciado>A lista de exercício a ser entregue consiste da primeira parte do documento <a href="http://coweb.icmc.usp.br/coweb/upload/71/lista2.pdf">lista2.pdf</a></enunciado>
+	<exercicio id="1" valor="100">
+		<criterio id="1" peso="1">Porcentagem do trabalho incorreto.</criterio>
+	</exercicio>
+</trabalho>

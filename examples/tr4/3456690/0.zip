@@ -1,0 +1,95 @@
+ ####################################################################
+#                                                                   #
+# Guilherme de Almeida Cordeiro 3456690                             #
+# e Thiago Kenji Souto		3530150                             #
+# hoje é 22 de abri e o ano é 2003.                                 #
+#                                                                   #
+####################################################################
+
+
+class Ponto:
+    def __init__ (self, x=0, y=0):
+        self.x = x;
+        self.y = y;
+    def set_ponto (self, x, y):
+        self.x = x
+        self.y = y
+    def get_x (self):
+        return self.x
+    def get_y (self):
+        return self.y
+    def __add__ (self, other):
+        return Ponto(self.x + other.x, self.y + other.y)
+    def __mul__ (self, other):
+        return self.x * other.x + self.y * other.y
+    def __rmul__ (self, other):
+        return Ponto (other * self.x, other * self.y)
+    def __sub__ (self, other):
+        return Ponto(self.x - other.x, self.y - other.y)
+    def __div__ (self, other):
+        return self.x / other.x - self.y / other.y
+    def __rdiv__ (self, other):
+        return Ponto(self.x / other, self.y / other)
+    def __str__ (self):
+        return '(' + str(self.x) + ',' + str(self.y) + ')'
+
+class Circle (Ponto):
+    def __init__ (self, raio=1, x=0, y=0):
+        Ponto.__init__(self, x, y)
+        self.raio = raio
+    def get_raio (self):
+        return self.raio
+    def printc (self):
+        print self.get_x()
+        print self.get_y()
+        print self.raio
+    def area (self):
+        return 3.141593 * self.raio * self.raio
+    def set_circ (self, p):
+        self.x = p.x
+        self.y = p.y
+    def __add__ (self, other):
+        return Circle (self.raio + other.get_raio(), self.x + other.get_x(), self.y + other.get_y())
+    def __sub__ (self, other):
+        return Circle (self.raio - other.get_raio(), self.x - other.get_x(), self.y - other.get_y())
+    def __mul__ (self, other):
+        return Circle (self.raio*other.get_raio(), self.x*other.get_x(), self.y*other.get_y())
+    def __rmul__ (self, other):
+        return Circle (self.raio*other, self.x*other, self.y*other)
+    def __div__ (self, other):
+        return Circle (self.raio/other.get_raio(), self.x/other.get_x(), self.y/other.get_y())
+    def __rdiv__ (self, other):
+        return Circle (self.raio/other, self.x/other, self.y/other)
+    def __str__ (self):
+        return '[' + str(self.raio) + ']' + '(' + str(self.x) + ',' + str(self.y) + ')'
+        
+    
+class Cylinder (Circle):
+    def __init__ (self, alt=1, raio=1, x=0, y=0):
+        Circle.__init__(self, raio, x, y)
+        self.alt = alt
+    def printcy (self):
+        print self.get_x()
+        print self.get_y()
+        print self.raio
+        print self.alt
+    def volume (self):
+        return self.area() * self.alt
+    def area (self):
+        return self.area * 2 + 2 * 3.141593 * self.raio * self.alt
+    def get_alt (self):
+        return self.alt
+    def __add__ (self, other):
+        return Cylinder(self.alt+other.get_alt(), self.raio + other.get_raio(), self.x + other.get_x(), self.y + other.get_y())
+    def __sub__ (self, other):
+        return Cylinder (self.alt-other.get_alt(), self.raio - other.get_raio(), self.x - other.get_x(), self.y - other.get_y())
+    def __mul__ (self, other):
+        return Cylinder (self.alt*other.get_alt(), self.raio * other.get_raio(), self.x*other.get_x(), self.y*other.get_y())
+    def __rmul__ (self, other):
+        return Cylinder (self.alt*other, self.raio*other, self.x*other, self.y*other)
+    def __div__ (self, other):
+        return Cylinder (self.alt/other.get_alt(), self.raio/other.get_raio(), self.x/other.get_x(), self.y/other.get_y())
+    def __rdiv__ (self, other):
+        return Cylinder (self.alt/other, self.raio/other, self.x/other, self.y/other)
+    def __str__ (self):
+        return '{' + str(self.alt) + '}[' + str(self.raio) + ']' + '(' + str(self.x) + ',' + str(self.y) + ')'

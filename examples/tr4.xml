@@ -1,0 +1,22 @@
+<trabalho id="tr4" data="2003-04-26 23:59">
+	<nome>Lista de exercícios 4</nome>
+	<descricao>Herança.</descricao>
+	<enunciado></enunciado>
+	<exercicio id="1" valor="100">
+		<criterio id="1" peso="1" descricao="Importar os pacotes necessários." />
+		<criterio id="2" peso="1" descricao="Ler o texto de um arquivo." />
+		<criterio id="3" peso="1" descricao="Identificar as frases." />
+		<criterio id="4" peso="1" descricao="Identificar as palavras." />
+		<criterio id="5" peso="1" descricao="Identificar os artigos." />
+		<criterio id="6" peso="1" descricao="Identificar os substantivos." />
+		<criterio id="7" peso="1" descricao="Identificar os verbos." />
+		<criterio id="8" peso="1" descricao="Certificar-se que a estrutura da frase é [artigo] [substantivo] [verbo] [artigo] [substantivo]" />
+		<criterio id="9" peso="1" descricao="Alterar o gênero e número das frases." />
+		<criterio id="10" peso="0" descricao="Mudar a pessoa do verbo adequadamente." />
+		<criterio id="11" peso="1" descricao="Usar polimorfismo." />
+		<criterio id="12" peso="1" descricao="Trabalhar corretamente os verbos da primeira, segunda e terceira conjugações." />
+		<criterio id="13" peso="0" descricao="Todos os verbos devem estar conjugados no presente do indicativo." />
+		<criterio id="14" peso="1" descricao="As seguintes classes devem estar definidas: frase, palavra, artigo (definido e indefinido), substantivo, verbo (primeira, segunda e terceira conjugações)." />
+		<criterio id="15" peso="1" descricao="Associar corretamente objetos do tipo frase e palavra." />
+	</exercicio>
+</trabalho>
