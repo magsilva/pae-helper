@@ -1,25 +1,20 @@
 Procecimentos para instalação:
+------------------------------
 
-1. Edite o arquivo "config.php", alterando as definições relevantes (todas menos as duas últimas geralmente).
-2. Crie o arquivo com os dados sobre os alunos.
-3. Crie o diretório que servirá de repositório para os trabalhos.
+1. Criar um diretório em um servidor http e copiar os arquivos do pacote neste diretório.
+2. Edite o arquivo "config.php", alterando as definições relevantes (todas menos as duas últimas geralmente).
+3. Crie o arquivo com os dados sobre os alunos (o nome deste arquivo deverá ser aquele indicado no config.php).
+4. Crie o diretório que servirá de repositório para os trabalhos (o nome deste diretório deverá ser aquele indicado no config.php).
+5. Definir as permissões do diretório como sendo de leitura e escrita, e para o script somente leitura.
+6. Definir o proprietário do diretório do exercício criado e de todos os arquivos nele contidos
+para www.root (ou algo apropriado, o importante é que o usuário do servidor HTTP tenha permissão de escrita nos diretórios do repositório).
+
+Se quiser, utilize o script "checksetup" para alterar automaticamente essas permissões.
 
 
 
-Como criar um exercício:
-------------------------
+Criação de exercícios:
+----------------------
 
-1. Criar um diretório em um servidor http e copiar todo o conteúdo deste diretório.
-2. Para cada trabalho criar uma pasta separada. Exemplo: tr1, tr2, etc.
-3. Copiar, para o diretório do trabalho, os arquivos:
-	- pagina*
-	- enunciado.html
-	- config_exercise.php
-4. Criar uma ligação simbólica como o nome "index.php" para o arquivo "pagina_principa.php".
-5. Editar o arquivo "enunciado.html" descrevendo o exercício a ser resolvido.
-6. Editar o arquivo "config_exercise.php" e definindo a data limite, a quantidade de
-exercícios, quanto deve ser a nota parcial de uma questão ( nota exercício / constante ).
-7. Definir as permissões do diretório como sendo de leitura e escrita, e para
-o script somente leitura.
-8. Definir o proprietário do diretório do exercício criado e de todos os arquivos nele contidos
-para www.root (ou algo apropriado).
+Crie, no diretório de repositório de trabalhos, um arquivo (documento XML) descrevendo o exercício.
+
