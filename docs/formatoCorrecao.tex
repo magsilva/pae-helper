@@ -1,0 +1,39 @@
+\section{Correção de trabalhos}
+
+\subsection{Introdução}
+
+A correção é sempre otimista, sendo somente assinalado os erros. Na pior das hipóteses, o aluno irá tirar mais nota do que o normal (que é a regra normal). Neste sentido ainda, determina-se a porcentagem \textbf{errada} do critério (e não o usual, que é a porcentagem correta).
+
+\subsection{Formatos}
+
+corrigido-v0.py
+Este é o primeiro formato de notas, consistindo somente de um número inteiro, de 0 a 100, representando a nota do aluno em questão.
+
+corrigido-v1.py
+O erro pode ser total ou parcial, ou seja, questão inteira ou metade errada. O formato deste método é "#" "ERRO" [ "TOTAL" | "PARCIAL" ] exercicio"."criterio. Por exemplo:
+\begin{verbatim}
+	# ERRO TOTAL 1.1
+	# ERRO PARCIAL 2.7
+\end{verbatim}
+
+corrigido-v2.py
+Todo erro é total. O formato deste método é "#" "ERRO" exercicio criterio. Por exemplo:
+\begin{verbatim}
+	# ERRO 1 1
+	# ERRO 2 7
+\end{verbatim}
+
+corrigido-v3.py
+O erro pode ser total ou parcial, ou seja, questão inteira ou metade errada. O formato deste método é "#" "ERRO" [ "TOTAL" | "PARCIAL" ] exercicio criterio. Ele é praticamente idêntico ao \ref{}, apenas não possui um ponto separando o exercício e o e critério em questão. Por exemplo:
+\begin{verbatim}
+	# ERRO TOTAL 1 1
+	# ERRO PARCIAL 2 7
+\end{verbatim}
+
+
+corrigido-v4.py
+O erro variar entre 0 e 100 porcento do critério. O formato deste método é "#" "ERRO" exercicio criterio porcentagem. Por exemplo:
+\begin{verbatim}
+	# ERRO 1 1 100
+	# ERRO 2 7 50
+\end{verbatim}
