@@ -18,3 +18,8 @@ Criação de exercícios:
 
 Crie, no diretório de repositório de trabalhos, um arquivo (documento XML) descrevendo o exercício.
 
+
+FAQ:
+----
+
+Na dúvida, sempre execute: php checksetup.php
