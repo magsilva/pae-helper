@@ -1,1 +1,8 @@
-
+<trabalho id="" data="" tamanhoGrupo="">
+	<nome></nome>
+	<descricao></descricao>
+	<enunciado></enunciado>
+	<exercicio id="" valor="">
+		<criterio id="" peso="" descricao="" />
+	</exercicio>
+</trabalho>
