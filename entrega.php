@@ -51,27 +51,28 @@ if ( !$_REQUEST[ "numero_usp_lider" ] || !$_REQUEST[ "senha" ] || !is_uploaded_f
 		} else {
 			echo "OK";
 			$grupo_ok = TRUE;
-			if ( $_REQUEST[ "numero_usp_1" ] != NULL && $classe->possui_aluno( $_REQUEST[ "numero_usp_1" ] ) ) {
-				echo "<br />" . $_REQUEST[ "numero_usp_lider" ] . " responsabilizando-se por " . $_REQUEST[ "numero_usp_1" ] . "...";
+			for ( $i = 1; $i < $trabalho->tamanho_grupo; $i++ ) {
+				if ( $_REQUEST[ "numero_usp_$i" ] != NULL && $classe->possui_aluno( $_REQUEST[ "numero_usp_$i" ] ) ) {
+					echo "<br />" . $_REQUEST[ "numero_usp_lider" ] . " responsabilizando-se por " . $_REQUEST[ "numero_usp_$i" ] . "...";
 			
-				$grupo_ok &= $aluno->responsabilizar_por( $trabalho, $_REQUEST[ "numero_usp_1" ] );
-				echo "OK";
-			}
-			if ( $_REQUEST[ "numero_usp_2" ] != NULL && $classe->possui_aluno( $_REQUEST[ "numero_usp_2" ] ) ) {
-				echo "<br />" . $_REQUEST[ "numero_usp_lider" ] . " responsabilizando-se por " . $_REQUEST[ "numero_usp_2" ] . "...";
-				$grupo_ok &= $aluno->responsabilizar_por( $trabalho, $_REQUEST[ "numero_usp_2" ] );
-				echo "OK";
+					$grupo_ok &= $aluno->responsabilizar_por( $trabalho, $_REQUEST[ "numero_usp_$i" ] );
+					echo "OK";
+				}
 			}
 			$subject = "Entrega de trabalho de DISCIPLINA";
-			$message = "Trabalho recebido com sucesso ($numero_usp_lider $numero_usp_1 $numero_usp_2.";
+			$message = "Trabalho recebido com sucesso ($numero_usp_lider)";
 
 			if ( ! $grupo_ok ) {
-				$message .= "\n\nATENÇÃO\nErro no recebimento de trabalho do grupo. O líder era";
+				$message .= "\n\nATENÇÃO\nErro no recebimento de trabalho do grupo. Os componentes eram:";
 				$message .= $_REQUEST[ "numero_usp_lider" ];
-				$message .= " e os outros elementos do grupo eram ";
-				$message .= $_REQUEST[ "numero_usp_1" ];
-				$message .= " e ";
-				$message .= $_REQUEST[ "numero_usp_2" ];
+				$message .= " (líder)";
+				for ( $i = 1; $i < $trabalho->tamanho_grupo; $i++ ) {
+					if ( $_REQUEST[ "numero_usp_$i" ] != NULL ) {
+						$message .= ", ";
+						$message .= $_REQUEST[ "numero_usp_$i" ];
+					}
+				}
+				$message .= ".";
 			}
 			$headers .= "From: " . MONITOR . ">\r\n";
 			$headers .= "To: " . MONITOR . ">\r\n";
