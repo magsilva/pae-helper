@@ -26,6 +26,14 @@ function alterar_permissao( $nome_diretorio, $expressao_regular, $permissao_arqu
 	}
 }
 
+if ( !is_dir( REPOSITORIO ) ) {
+	mkdir( REPOSITORIO );
+}
+
+if ( !is_file( BASE_DADOS ) ) {
+	touch( BASE_DADOS );
+}
+
 alterar_permissao( ".", "^[a-zA-Z]", 0440, 0755 );
 alterar_permissao( REPOSITORIO, "^tr", 0440, 0755 );
 chmod( BASE_DADOS, 0755 );

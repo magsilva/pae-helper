@@ -1,3 +1,16 @@
+Requisitos:
+-----------
+
+Os requisitos mínimos para executar o sistema são:
+- Servidor HTTP Apache 1.3 ou superior
+- PHP 4.3 ou superior
+- Linux ou algum UNIX (Solaris, FreeBSD, NetBSD, etc).
+- Sistema de arquivo que suporte ligações simbólicas (ou seja, FAT não é suportado).
+
+Este sistema está sendo desenvolvido em um computador com Apache 2.0.45, PHP 4.3.2,
+Linux 2.4.21, sistema de arquivo hospedeiro ReiserFS.
+
+
 Procecimentos para instalação:
 ------------------------------
 
