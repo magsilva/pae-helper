@@ -1,5 +1,4 @@
 Automatizar a criação de um novo exercício
-Gerar uma tabela com todas as notas e a média.
 Revisar o cálculo automático de notas.
 
 Garantir que o nome do arquivo sendo enviado pelo aluno não é igual ao nome do critério.
@@ -7,3 +6,5 @@ Garantir que arquivos relevantes não possuem permissão de escrita (os .php e os 
 Deixar configurável a utilização de trabalho substitutivo (atualmente é hardcoded em geral.php).
 
 Alterar o checksetup para PHP e usar as variáveis em config.php para configurar as permissões.
+
+Adicionar tipos de trabalho (normal, substitutivo, adicional) e alterar o cálculo final em geral.php
