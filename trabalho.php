@@ -14,8 +14,10 @@ class Trabalho {
 		$nome,		// Nome do trabalho.
 		$descricao,	// Breve descrição do trabalho.
 		$enunciado,	// Texto detalhado sobre o trabalho.
-		$exercicios;	// Os exercícios associados ao trabalho, utilizados posteriormente
-				// para fazer o cálculo das notas.
+		$exercicios,	// Os exercícios associados ao trabalho, utilizados posteriormente
+									// para fazer o cálculo das notas.
+		$tamanho_grupo; // Tamanho do grupo de pessoas.
+
 		
 	/**
 	* Método utilizado para fazer a análise do arquivo com os dados a respeito do trabalho.
@@ -26,6 +28,7 @@ class Trabalho {
 			case "trabalho":
 				$this->id = $atributo[ "id" ];
 				$this->data_entrega = $atributo[ "data" ];
+				$this->tamanho_grupo = $atributo[ "tamanhoGrupo" ];
 				$this->diretorio_base = REPOSITORIO . "/" . $atributo[ "id" ];
 				break;
 			case "nome":

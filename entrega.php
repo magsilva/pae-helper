@@ -88,9 +88,15 @@ if ( !$_REQUEST[ "numero_usp_lider" ] || !$_REQUEST[ "senha" ] || !is_uploaded_f
 	<dl>
 	<br /><label for="numero_usp_lider">Número USP do líder do grupo</label>
 	<dd><input type="text" name="numero_usp_lider" size="10" id="numero_usp_lider" /></dd>
-	<br />Número USP dos outros elementos do grupo
-	<dd><input type="text" name="numero_usp_1" size="10" id="numero_usp_1" /></dd>
-	<dd><input type="text" name="numero_usp_2" size="10" id="numero_usp_2" /></dd>
+<?php
+	if ( $trabalho->tamanho_grupo > 1 ) {
+?>
+		<br />Número USP dos outros elementos do grupo:
+<?php
+		for ( $i = 1; $i < $trabalho->tamanho_grupo; $i++ ) {
+			echo "<dd><input type=\"text\" name=\"numero_usp_$i\" size=\"10\" id=\"numero_usp_$i\" /></dd>";
+		}
+?>
 	<br /><label for="senha">Senha do líder do grupo</label>
 	<dd><input type="password" name="senha" maxlength="10" id="senha" /></dd>
 	<br />
