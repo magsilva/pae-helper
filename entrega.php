@@ -1,4 +1,5 @@
 <?php
+	require_once( "header.php" );
 	require_once( "config.php" );
 	require_once( "trabalho.php" );
 	require_once( "aluno.php" );
@@ -31,12 +32,23 @@ if ( time() > strtotime( $trabalho->data_entrega ) ) {
 	exit;
 }
 
-if ( $_REQUEST[ "numero_usp_lider" ] && $_REQUEST[ "senha" ] && is_uploaded_file( $_FILES['arquivo']['tmp_name'] ) ) {
+/**
+* A tática é sempre pessimista: os erros tem o seu código de tratamento próxima a verificação de condição
+* de existência do mesmo.
+*/
+if ( !$_REQUEST[ "numero_usp_lider" ] || !$_REQUEST[ "senha" ] || !is_uploaded_file( $_FILES['arquivo']['tmp_name'] ) ) {
+	echo strftime( "O prazo para enviar os trabalhos é %e/%m/%G, horário %T. ", mktime( HORA, MINUTO , 0, MES, DIA, ANO ) );
+	echo strftime( "Agora, no servidor, a data é %e/%m/%G e o horário %T.", time() );
+} else {
 	$classe =& new Classe( BASE_DADOS );
 	$aluno =& $classe->pegar_aluno( $_REQUEST[ "numero_usp_lider" ], $_REQUEST[ "senha" ] );
-	if ( ! is_null( $aluno ) ) {
+	if ( is_null( $aluno ) ) {
+		echo "Número USP ou senha incorreta. Por favor, tente novamente.";
+	} else {
 		echo "Gravando trabalho sob a responsabilidade de " . $_REQUEST[ "numero_usp_lider" ] . "...";
-		if ( $aluno->gravar_arquivo( $trabalho, $_FILES['arquivo']['tmp_name'] ) ) {
+		if ( !$aluno->gravar_arquivo( $trabalho, $_FILES['arquivo']['tmp_name'] ) ) {
+			echo "Erro no envio do arquivo. Por favor, tente novamente.";
+		} else {
 			echo "OK";
 			$grupo_ok = TRUE;
 			if ( $_REQUEST[ "numero_usp_1" ] != NULL && $classe->possui_aluno( $_REQUEST[ "numero_usp_1" ] ) ) {
@@ -65,15 +77,9 @@ if ( $_REQUEST[ "numero_usp_lider" ] && $_REQUEST[ "senha" ] && is_uploaded_file
 			$headers .= "To: " . MONITOR . ">\r\n";
 			ini_set( SMTP, "mail.icmc.usp.br" );
 			mail( MONITOR, $subject, $message, $headers );
-		} else {
-			echo "Erro no envio do arquivo. Por favor, tente novamente.";
 		}
-	} else {
-		echo "Número USP ou senha incorreta. Por favor, tente novamente.";
 	}
-} else {
-	echo strftime( "O prazo para enviar os trabalhos é %e/%m/%G, horário %T. ", mktime( HORA, MINUTO , 0, MES, DIA, ANO ) );
-	echo strftime( "Agora, no servidor, a data é %e/%m/%G e o horário %T.", time() );
+}
 ?>
 
 <br />
@@ -95,8 +101,6 @@ if ( $_REQUEST[ "numero_usp_lider" ] && $_REQUEST[ "senha" ] && is_uploaded_file
 	<br /><input type="submit" name="enviar" value="Enviar" /><input type="reset" name="limpar" value="Limpar" />
 </form>
 	
-<?php
-}
+<?
+	require_once( "footer.php" );
 ?>
-	
-</body>
