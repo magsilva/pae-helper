@@ -1,7 +1,7 @@
-Como instalar:
---------------
-1. Criar um arquivo "alunos.txt" com o nome, o número usp, a senha e o email de cada aluno.
-2. Alterar os seguintes dados em "config.php" (nome do estagiário e email):
+Procecimentos para instalação:
+
+Edite o arquivo "config.php", alterando as definições relevantes (todas menos as duas últimas geralmente).
+Crie o arquivo com os dados sobre os alunos.
 
 
 

@@ -114,11 +114,6 @@ class Aluno {
 			return FALSE;
 		}
 
-		$comando = escapeshellcmd( "file -b -i " . $arquivo_origem );
-//		if ( system( $comando ) != "application/x-zip" ) {
-//			return FALSE;
-//		}
-
 		$diretorio = $trabalho->diretorio_base . "/" . $this->numero_usp;
 
 		/*
