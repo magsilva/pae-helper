@@ -26,7 +26,6 @@
 <body>
 
 <?php
-import_request_variables( "P" );
 if ( $_REQUEST[ "$numero_usp" ] ) {
 	$mutex = sem_get( MUTEX_ID, MUTEX_VALUE, MUTEX_PERM );
 	sem_acquire( $mutex );
