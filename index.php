@@ -1,6 +1,7 @@
 <?php
 	require( "config.php" );
 	require( "trabalho.php" );
+	require_once( "checar.php" );
 ?>
 
 <!DOCTYPE html PUBLIC "-//IETF//DTD XHTML 1.1//EN">
@@ -19,6 +20,9 @@
 <h2>Controle de trabalhos</h2>
 <dl>
 <?php
+	if ( !isdir( REPOSITORIO ) ) {
+		echo "O sistema está indisponível temporariamente. Consulte o responsável pelo sistema.";
+	}
 	$diretorio = opendir( REPOSITORIO );
 	while ( false !== ( $arquivo = readdir( $diretorio ) ) ) {
 		if ( !is_dir( REPOSITORIO . "/" . $arquivo ) && ereg( "^tr",  $arquivo ) ) {
