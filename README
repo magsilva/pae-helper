@@ -1,3 +1,30 @@
+PAE Helper
+Autor: Marco Aurélio Graciotto Silva <magsilva@gmail.com>
+
+
+
+Descrição:
+----------
+
+Este sistema foi desenvolvido para auxiliar o gerenciamento de trabalhos
+entregues na disciplina Programação Orientada a Objetos. O programa foi
+escrito em PHP.
+
+
+Características:
+----------------
+
+ * Orientada a objeto (ao menos quanto ao backend).
+ * Não utiliza banco de dados (o objetivo era depender o menos possível
+   de outros serviços.
+ * Armazena todos os trabalhos enviados.
+ * Cálculo automático de notas, com quatro possíveis tipos de correção
+   possíveis (e facilmente extensível para mais tipos).
+ * Calculo da média final (incluindo trabalho substitutivo).
+ * Trabalhos descritos por meio de um documento XML (não validado).
+ * Interface KISS.
+
+
 Requisitos:
 -----------
 
