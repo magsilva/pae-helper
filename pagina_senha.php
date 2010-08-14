@@ -1,7 +1,7 @@
 <?php 
 	if ( USAR_CONEXAO_SEGURA && ! $_SERVER[ "HTTPS" ] ) {
 		ob_start();
-		header( "Location: https://" . $_SERVER["HTTP_HOST"] . " /" . $_SERVER["PHP_SELF"] ); 
+		header( "Location: https://" . $_SERVER["HTTP_HOST"] . "/" . $_SERVER["PHP_SELF"] ); 
 		exit;
 	} 
 

@@ -11,11 +11,12 @@ require_once( "criterio.php" );
 * o método autenticar().
 */
 class Aluno {
-	var $nome,
-			$senha,
-			$numero_usp,
-			$email,
-			$autenticado; // Indica se o usuário já se autenticou.
+	var
+		$nome,
+		$senha,
+		$numero_usp,
+		$email,
+		$autenticado; // Indica se o usuário já se autenticou.
 
 	/**
 	* Cria um novo aluno.

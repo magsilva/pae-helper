@@ -14,8 +14,7 @@ class Trabalho {
 		$nome,		// Nome do trabalho.
 		$descricao,	// Breve descrição do trabalho.
 		$enunciado,	// Texto detalhado sobre o trabalho.
-		$exercicios,	// Os exercícios associados ao trabalho, utilizados posteriormente
-									// para fazer o cálculo das notas.
+		$exercicios,	// Os exercícios associados ao trabalho, utilizados posteriormente para fazer o cálculo das notas.
 		$tamanho_grupo; // Tamanho do grupo de pessoas.
 
 		
