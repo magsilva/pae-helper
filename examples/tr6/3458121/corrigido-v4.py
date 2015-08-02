@@ -1,5 +1,0 @@
-# ERRO 1 2 20
-# ERRO 1 3 30
-# ERRO 1 4 20
-# ERRO 1 6 60
-# ERRO 1 7 10

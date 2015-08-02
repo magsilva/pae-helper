@@ -1,4 +1,0 @@
-# ERRO 1 2 30
-# ERRO 1 3 10
-# ERRO 1 4 30
-# ERRO 1 6 40
